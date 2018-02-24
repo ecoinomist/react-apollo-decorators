@@ -94,12 +94,12 @@ export default function(query, userConfig = {}) {
     }
 
     const FinalComponent = graphql(query, {
-      ...config,
       props: ({ownProps, data}) => ({
         _data: data,
         ...ownProps,
         ...data
       }),
+      ...config,
       options: props => {
         const options = config.options
         const userOptions = (typeof options === 'function' ? options(props) : options) || {}

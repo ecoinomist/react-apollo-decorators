@@ -25,7 +25,7 @@ export default class Error extends React.Component {
   renderGraphQL() {
     return (
       <div style={styles.container}>
-        <div style={styles.title}>GraphQL Error:</div>
+        <div style={styles.title}>Error:</div>
         {this.props.error.graphQLErrors.map((error, index) => {
           return <div key={index}>{error.message}</div>
         })}

@@ -26,6 +26,7 @@ import withGraphQL from 'react-apollo-decorators/lib/withGraphQL'
 - **query**: GraphQL document containing the query.
 - **options**:
   - **loading**: Loading component. Set to null to render the component when the query hasn't finish loading.
+  - **props**: if given will override default Props behavior.
   - Other options of apollo's ```graphql``` decorator.
 
 ### ```@withMutation(mutation, options)```
