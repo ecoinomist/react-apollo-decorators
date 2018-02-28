@@ -108,6 +108,7 @@ export default function(query, userConfig = {}) {
         }
         return {
           fetchPolicy: 'cache-and-network', // default option
+          errorPolicy: 'all',  // default option to allow reloading of Component
           ...userOptions,
           variables: {
             ...getVariables(query, config, props),
